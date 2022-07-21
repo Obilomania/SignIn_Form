@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="/index.js" defer></script>
+    <title>Sign In Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form class="inner-container">
+            <div class="input">
+                <label>Username</label>
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input">
+                <label>Password</label>
+                <input class="password" type="password" placeholder="Password">
+                <i class="bi bi-eye"></i>
+            </div>
+            <div class="checkbox">
+                <label>Remember Me?</label>
+                <input type="checkbox" placeholder="Remember Me">
+            </div>
+            <a href="">Forgot Password?</a>
+            <button>Log In</button>
+        </form>
+        <!-- <hr class="line"> -->
+        <div class="options">
+            <a href="" class="register">Register</a>
+        </div>
+    </div>
+
+    <!-- <div class="container-index">
+        <div class="inner-form">
+            <div class="information">
+                <label for="">First Name</label>
+                <p>Obinna</p>
+            </div>
+            <div class="information">
+                <label for="">Last Name</label>
+                <p>Iloanya</p>
+            </div>
+            <div class="information">
+                <label for="">Gender</label>
+                <p>Male</p>
+            </div>
+            <div class="information">
+                <label for="">Registraion Number</label>
+                <p>234566827</p>
+            </div>
+            <div class="information">
+                <label for="">Date Of Birth</label>
+                <p>20-07-2000</p>
+            </div>
+            <div class="information">
+                <label for="">Department</label>
+                <p>Computer Engineering</p>
+            </div>
+            <div class="information">
+                <label for="">Faculty</label>
+                <p>Faculty Of Science</p>
+            </div>
+        </div>
+        <img src="data:image/png;base64,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"
+            alt="profile photo">
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem;
+  width: fit-content;
+  margin: 10vh auto;
+  padding: 3rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+.form-container input {
+  width: 15rem;
+  height: 2rem;
+  padding: 0.4rem;
+  outline: none;
+}
+.form-container input::placeholder {
+  letter-spacing: 0.1rem;
+  border-radius: 1rem;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.form-container .line {
+  transform: rotate(90deg);
+}
+.checkbox input {
+  width: 1rem;
+}
+.bi-eye {
+  position: fixed;
+  background-color: white;
+  margin-left: 0.5rem;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+.form-container .options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-evenly;
+  color: black;
+  margin-top: -3em;
+}
+.form-container a {
+  text-decoration: none;
+}
+.form-container .register {
+  border: none;
+  background: rgb(75, 75, 250);
+  color: white;
+  padding: 0.5rem;
+  width: 7rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.form-container button {
+  border: none;
+  background: rgb(75, 75, 250);
+  color: white;
+  padding: 0.5rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* .container-index {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 4rem;
+  width: fit-content;
+  border: 1px solid gray;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 1rem;
+}
+.information {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  line-height: 2rem;
+}
+.container-index img {
+  width: 18rem;
+  height: 15rem;
+} */
